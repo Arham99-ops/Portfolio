@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-effect z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl sm:text-2xl font-bold text-gradient">Portfolio</div>
+                <div class="hidden md:flex space-x-4 lg:space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="projects.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Projects
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="skills.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Skills
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden glass-effect">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Projects</a>
+            <a href="skills.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Skills</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-12 text-gradient">My Skills</h1>
+
+            <!-- Skills Overview -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Frontend and backend development using modern technologies and frameworks.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Mobile Development</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Cross-platform mobile app development with React Native and Flutter.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-gamepad text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Game Development</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">2D and 3D game development using Unity and C#.</p>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-8 sm:mb-12" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800">Programming Languages</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">JavaScript</span>
+                            <span class="text-blue-700">90%</span>
+                        </div>
+                        <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-blue-700 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">Python</span>
+                            <span class="text-blue-700">85%</span>
+                        </div>
+                        <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-blue-700 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">HTML/CSS</span>
+                            <span class="text-blue-700">95%</span>
+                        </div>
+                        <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-blue-700 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800">Tools & Technologies</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                        <i class="fab fa-react text-blue-700 text-xl"></i>
+                        <span class="text-gray-700">React</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                        <i class="fab fa-node-js text-blue-700 text-xl"></i>
+                        <span class="text-gray-700">Node.js</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                        <i class="fab fa-git-alt text-blue-700 text-xl"></i>
+                        <span class="text-gray-700">Git</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                        <i class="fas fa-database text-blue-700 text-xl"></i>
+                        <span class="text-gray-700">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800">Additional Skills</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-4 text-gray-800">Soft Skills</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-blue-700"></i>
+                                <span class="text-gray-700">Problem Solving</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-blue-700"></i>
+                                <span class="text-gray-700">Team Collaboration</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-blue-700"></i>
+                                <span class="text-gray-700">Time Management</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-4 text-gray-800">Languages</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-blue-700"></i>
+                                <span class="text-gray-700">English (Fluent)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-blue-700"></i>
+                                <span class="text-gray-700">Hindi (Native)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-blue-700"></i>
+                                <span class="text-gray-700">Gujarati (Native)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About Me</h3>
+                    <p class="text-gray-400">A passionate web developer dedicated to creating beautiful and functional websites. Always eager to learn and take on new challenges.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="skills.html" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>topiwalaarham@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>+91 95129 59099</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Gujarat, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026, Arham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Animate skill bars on scroll
+        const skillBars = document.querySelectorAll('.h-2.bg-blue-700');
+        
+        const animateSkillBars = () => {
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 1s ease-in-out';
+                    bar.style.width = width;
+                }, 200);
+            });
+        };
+
+        // Trigger animation when skills section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateSkillBars();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.bg-white.rounded-lg.shadow-md'));
+    </script>
+</body>
+</html> 

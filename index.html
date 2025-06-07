@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-effect z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl sm:text-2xl font-bold text-gradient">Portfolio</div>
+                <div class="hidden md:flex space-x-4 lg:space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="projects.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Projects
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="skills.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Skills
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden glass-effect">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Projects</a>
+            <a href="skills.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Skills</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 min-h-screen flex items-center">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+                <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-right">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                        <span class="text-gradient">Hi, I'm</span>
+                        <span class="block mt-2 text-blue-700">Arham Topiwala</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                        A passionate web developer crafting beautiful and functional websites with modern technologies.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="contact.html" class="btn-hover text-white px-6 sm:px-8 py-3 rounded-full inline-block text-center">
+                            Get in Touch
+                        </a>
+                        <a href="projects.html" class="btn-hover bg-white text-white px-6 sm:px-8 py-3 rounded-full inline-block border-2 border-blue-700 text-center">
+                            View Projects
+                        </a>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
+                            <i class="fab fa-linkedin-in text-blue-700"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
+                            <i class="fab fa-github text-blue-700"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
+                            <i class="fab fa-instagram text-blue-700"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-12 md:mt-0" data-aos="fade-left">
+                    <div class="relative">
+                        <!-- Simplified Design Element -->
+                        <div class="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto relative">
+                            <!-- Main Circle -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-700 to-blue-900 rounded-full transform-3d"></div>
+                            
+                            <!-- Decorative Elements -->
+                            <div class="absolute -top-4 -right-4 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 bg-blue-200 rounded-full opacity-50"></div>
+                            <div class="absolute -bottom-4 -left-4 w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 bg-blue-100 rounded-full opacity-50"></div>
+                            
+                            <!-- Tech Stack Icons -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                                    <div class="text-2xl sm:text-3xl md:text-4xl text-white transform hover:scale-110 transition-transform">
+                                        <i class="fas fa-code" title="Frontend"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl md:text-4xl text-white transform hover:scale-110 transition-transform">
+                                        <i class="fas fa-server" title="Backend"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl md:text-4xl text-white transform hover:scale-110 transition-transform">
+                                        <i class="fas fa-database" title="Database"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl md:text-4xl text-white transform hover:scale-110 transition-transform">
+                                        <i class="fas fa-gamepad" title="Game Dev"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl md:text-4xl text-white transform hover:scale-110 transition-transform">
+                                        <i class="fas fa-mobile-alt" title="Mobile"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl md:text-4xl text-white transform hover:scale-110 transition-transform">
+                                        <i class="fas fa-cloud" title="Cloud"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Simple Border -->
+                            <div class="absolute inset-0 rounded-full border-4 border-blue-300"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview Section -->
+    <section class="py-16 sm:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gradient">My Expertise</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="card-hover p-6 rounded-lg bg-white shadow-md" data-aos="fade-up">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Creating responsive and modern websites using the latest technologies.</p>
+                </div>
+                <div class="card-hover p-6 rounded-lg bg-white shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-paint-brush text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Designing beautiful and intuitive user interfaces with great user experience.</p>
+                </div>
+                <div class="card-hover p-6 rounded-lg bg-white shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Responsive Design</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Building websites that work perfectly on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Add typing animation to the name
+        const nameElement = document.querySelector('.typing');
+        const name = nameElement.textContent;
+        nameElement.textContent = '';
+        let i = 0;
+        
+        function typeWriter() {
+            if (i < name.length) {
+                nameElement.textContent += name.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        // Start typing animation when page loads
+        window.addEventListener('load', typeWriter);
+    </script>
+
+    <!-- Add this to your existing styles.css or in a style tag -->
+    <style>
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 20s linear infinite;
+        }
+        .center-0 {
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</body>
+</html> 

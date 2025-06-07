@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-effect z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl sm:text-2xl font-bold text-gradient">Portfolio</div>
+                <div class="hidden md:flex space-x-4 lg:space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="projects.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Projects
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="skills.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Skills
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-700 transition-colors relative group text-sm lg:text-base">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden glass-effect">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Projects</a>
+            <a href="skills.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Skills</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-blue-50 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-12 text-gradient">About Me</h1>
+            
+            <!-- Education Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-8 sm:mb-12" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-graduation-cap text-blue-700 mr-3"></i>
+                    Education
+                </h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-700 pl-4 sm:pl-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">10th</h3>
+                        <p class="text-blue-700 font-medium">A.G. High School</p>
+                        <p class="text-gray-600 text-sm sm:text-base">2020 - 2021</p>
+                        <p class="text-gray-600 text-sm sm:text-base mt-2"> </p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-700 pl-4 sm:pl-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">12th-Commerce</h3>
+                        <p class="text-blue-700 font-medium">A. G. High School</p>
+                        <p class="text-gray-600 text-sm sm:text-base">2022 - 2023</p>
+                        <p class="text-gray-600 text-sm sm:text-base mt-2"> </p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-700 pl-4 sm:pl-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Bachelors of Science in Information Technology</h3>
+                        <p class="text-blue-700 font-medium">L. J. University</p>
+                        <p class="text-gray-600 text-sm sm:text-base">2023 - Current</p>
+                        <p class="text-gray-600 text-sm sm:text-base mt-2">Relevant coursework: Data Structures, Algorithms, Web Development, Database Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-briefcase text-blue-700 mr-3"></i>
+                    Experience
+                </h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-700 pl-4 sm:pl-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Data Analyst</h3>
+                        <p class="text-blue-700 font-medium">Spectrum Tours and Travels</p>
+                        <p class="text-gray-600 text-sm sm:text-base">June 2023 - May 2024</p>
+                        <ul class="list-disc list-inside text-gray-600 text-sm sm:text-base mt-2 space-y-1">
+                            <li>Maintained and updated the company's data and records in excel</li>
+                            <li>Collaborated with team members to implement new features</li>
+                            <li>Optimized Data Analysis and Reporting</li>
+                        </ul>
+                    </div>
+                </div><br>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-700 pl-4 sm:pl-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Online Business Developer</h3>
+                        <p class="text-blue-700 font-medium">Genuine Bags</p>
+                        <p class="text-gray-600 text-sm sm:text-base">May 2024 - August 2025</p>
+                        <ul class="list-disc list-inside text-gray-600 text-sm sm:text-base mt-2 space-y-1">
+                            <li>maintained the website and updated the products and services</li>
+                            <li>Made progress in the business and increased the sales through online marketing</li>
+                            <li>Managed the social media accounts and increased the reach of the business</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Information Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-user text-blue-700 mr-3"></i>
+                    Personal Information
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-blue-700"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Location</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Ahmedabad, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-envelope text-blue-700"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Email</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">topiwalaarham@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-phone text-blue-700"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Phone</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">+91 95129 59099</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-language text-blue-700"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Languages</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">English, Hindi, Gujarati</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Download Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 sm:p-8" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex flex-col sm:flex-row items-center justify-between">
+                    <div class="flex items-center mb-4 sm:mb-0">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-file-pdf text-blue-700 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Resume</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Download my detailed resume</p>
+                        </div>
+                    </div>
+                    <a href="resume/Arham_resume.pdf" download class="btn-hover text-white px-6 sm:px-8 py-3 rounded-full inline-block text-center">
+                        <i class="fas fa-download mr-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About Me</h3>
+                    <p class="text-gray-400">A passionate web developer dedicated to creating beautiful and functional websites. Always eager to learn and take on new challenges.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="skills.html" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>topiwalaarham@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>+91 95129 59099</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Gujarat, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026, Arham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
